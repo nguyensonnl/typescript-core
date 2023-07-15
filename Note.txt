@@ -1,0 +1,13 @@
++ts_tuple:
+[boolean, string]
+[number, number, number]
+(string | number)[]
+
+ts_any_void
+ts_assertion
+ts_interface
+
+ts_Type_Alises
+ts_Union_Types
+
+tsc -w name file
