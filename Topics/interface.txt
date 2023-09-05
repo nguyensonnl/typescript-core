@@ -1,5 +1,4 @@
-{
-    interface Person{
+interface Person{
         readonly firstName: string,
         lastName: string,
         middleName?: string
@@ -22,4 +21,27 @@
     cursh.firstName ="thắm hương";
     const reuslt = getFullName(cursh);
     console.log(reuslt)
+
+     //Intersection Type
+interface Person{
+    name: string,
+    age: number
 }
+
+interface Action{
+    smile(): any;
+    dance():any;
+}
+
+type Super = Person & Action;
+function use1(tool: Super){
+    console.log("I can do anything");
+    tool.name;
+    tool.smile()
+}
+
+//Function: number, string
+function sum1(x:number, y:number):number{
+    return x + y;
+}
+//console.log(sum(10, 10));

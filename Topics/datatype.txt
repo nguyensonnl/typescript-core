@@ -1,0 +1,50 @@
+const num: number = 10;
+const str: string = "Hello world";
+const bool: boolean = true;
+const null: null = null;
+const undefined: undefined = undefined;
+
++Array
+const arr: string[] = ["Lisa"];
+const arr: Array<string> = ["Hello"];
+@mutil array type:
+const arr: (string | number)[] = ["lisa", 10];
+const arr: Array<string | number> = ["Lisa", 20];
+
++Object:
+const obj:{
+    name: string,
+    age: number
+} = {
+    name: "Rose",
+    age: 20
+}
+
+@The new Type in TS:
+#tuple:
+cont tuple: [number, string] = [10, "Lisa"];
++tuple array:
+const arrTuple: [number, string][] = [[1, "Lisa"], [2, "Rose"]];
+
+#enum:
+.enum number
+.enum string
+.enum number, string
+
+enum BlackPink{
+    Lisa = 10,
+    Rose = "Beauty",
+    Jennie,
+    Jisoo
+}
+
+#union: a variable has many datatype
+let union: (string | number);
+
+#any: any datatype
+let any: any;
+
+#void: null or undefined
+use with function not return value
+
+#never: not occur

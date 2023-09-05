@@ -1,0 +1,28 @@
+function name(parameter: type, parameter: type, ...): returnType{
+    ...do something
+}
+
+.If a function not return a value, you can use the void type as return type
+.Use the parameter?:type syntax to make a parameter optional
+.typeof(parameter) !== "undefined" to check if the parameter has been initialized
+
+#rest parameter
+function fn(...rest: type[]){
+
+}
+
+#Keyword:
+parameter optional
+parameter default
+rest parameter
+
+#function overloading
+function add(a: string, b: string):string;
+function add(a: number, b: number):number;
+
+function add(a: any, b:any) :any{
+    return a+b;
+}
+
+add(10, 10);
+add("La", "Lisa");

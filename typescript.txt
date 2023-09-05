@@ -11,3 +11,6 @@ ts_Type_Alises
 ts_Union_Types
 
 tsc -w name file
+
+terminal in vs error
+run in git bash

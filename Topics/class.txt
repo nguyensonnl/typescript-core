@@ -1,0 +1,27 @@
+#property
+function Person(firstName, lastName){
+    this.firstName = firstName;
+    this.lastName = lastName;
+}
+Person.property.getFullName = function(){
+    return `${this.firstName} ${this.lastName}`;
+}
+
+let person = new Person("Lisa", "La");
+console.log(person.getFullName());
+
+#class
+.constructor will run when class Person use
+class Person{
+    firstName: string;
+    lastName: string;
+
+    constructor(firstName: string, lastName: string){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName(): string{
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
